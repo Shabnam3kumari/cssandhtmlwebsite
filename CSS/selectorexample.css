@@ -1,0 +1,435 @@
+/* selectorexample.css */
+/* Selector Example */
+/* Universal Selector */
+/*
+*{
+    color: blue;
+    font-size: 40px;
+}
+*/
+/*
+body {
+  color: green;
+  font-size: 20px;
+}
+*/
+/* Element Selector */
+/*
+p {
+    color: purple;
+    background-color: gray;
+}*/
+/*
+ol {
+    color: red;
+    font-size: 30px;
+}
+
+div {
+    color: green;
+    font-size: 20px;
+}
+
+span {
+    color: rgb(38, 0, 255);
+}
+*/
+/* Class Selector */
+/*
+.red {
+    color: red;
+}
+
+.satyam {
+    color: rgb(0, 4, 255);
+    background-color: salmon;
+}
+
+.shivam {
+    color: purple;
+    background-color: goldenrod;
+}
+*/
+/* ID Selector */
+
+#selector2 {
+    color:white;
+    background-color: rgb(39, 122, 145);
+    font-size: 30px;
+}   
+
+#selector2paragraph {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+/*Child Selector*/
+/*
+.parent > p {
+    color: rgb(7, 7, 7);
+    background-color: rgb(167, 52, 52);
+}
+*/
+#firstparagraph {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.myspanstyle {
+    color: rgb(235, 225, 225);
+    background-color: rgb(122, 18, 18);
+}
+
+.whatiscss {
+    color: rgb(182, 177, 177);
+    background-color: rgb(102, 28, 28);
+}
+
+.foregroundcolor {
+    color: white;
+}
+
+.mybackgroundcolor {
+    background-color: rgb(109, 53, 53);
+}
+
+/* Create at least 3 Website *
+
+
+/* ------------------------------------------
+   ::details-content for expandable details
+   ------------------------------------------ */
+/* Styles the content inside the <details> element */
+.details-expand::details-content {
+  background: #e3f2fd;
+  border-left: 4px solid #1565c0;
+  font-size: 1.1em;
+  color: #1565c0;
+}
+
+/* ------------------------------------------
+   ::file-selector-button for file input controls
+   ------------------------------------------ */
+.file-selector::file-selector-button {
+  background: #43a047;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.file-selector::file-selector-button:hover {
+  background: #1b5e20;
+}
+
+/* ------------------------------------------
+   ::placeholder for input and textarea fields
+   ------------------------------------------ */
+.placeholder-input::placeholder {
+  color: #fbc02d;
+  font-style: italic;
+  opacity: 1;
+  font-size: 1em;
+}
+.placeholder-input:focus::placeholder {
+  color: #c62828;
+  opacity: 0.7;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.left-panel {
+  width: 30%;
+  background: #2c2c2c;
+  color: white;
+  padding: 20px;
+}
+
+.profile-pic img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+.section ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.section ul li {
+  margin: 5px 0;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.red { border-left: 5px solid #ff4c4c; padding-left: 10px; }
+.green { border-left: 5px solid #8dc63f; padding-left: 10px; }
+.blue { border-left: 5px solid #00b0f0; padding-left: 10px; }
+.orange { border-left: 5px solid #f39c12; padding-left: 10px; }
+
+.right-panel {
+  width: 70%;
+  padding: 30px;
+  background: #fff;
+  color: #333;
+}
+
+.right-panel h1 {
+  font-size: 32px;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.right-panel h1 span {
+  font-size: 20px;
+  font-weight: normal;
+  color: gray;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+section h2 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+section p,
+section ul {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+section ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+
+
+/* ------------------------------------------
+   ::before and ::after for branding content
+   ------------------------------------------ */
+/* Inserts icon before and message after elements */
+.before-text::before {
+  content: "🌟 ";
+  color: #ffab00;
+  font-size: 5em;
+  margin-right: 2px;
+}
+.after-text::after {
+  content: " | Empowering Careers";
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-left: 4px;
+}
+
+.before-box::before {
+  content: "✔ ";
+  color: #1565c0;
+  font-weight: bold;
+}
+.after-box::after {
+  content: " 🚀";
+  color: #f50057;
+}
+
+.before-btn::before {
+  content: "🔗 ";
+}
+.after-btn::after {
+  content: " →";
+  color: #1976d2;
+}
+
+/* ------------------------------------------
+   ::marker for custom list item markers
+   ------------------------------------------ */
+.marker-list li::marker {
+  color: #4936f4;
+  font-size: 5em;
+  font-family: "Segoe UI Emoji", sans-serif;
+}
+.marker-list-ol li::marker {
+  color: #3949ab;
+  font-size: 3em;
+  font-style: italic;
+}
+ul {
+  margin: 20px
+}
+
+
+/* =========================================================================
+   ::first-line Demo (Section-specific, no style override)
+   ========================================================================= */
+/* This file demonstrates the use of the ::first-line and ::first-letter pseudo-elements
+   for styling the first line and first letter of paragraphs, respectively. */
+
+   .first-line-demo1::first-line {
+  font-weight: bold;
+  color: #1976d2;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+}
+.first-line-demo2 p::first-line {
+  color: #388e3c;
+  background: #e8f5e9;
+  font-family: "Georgia", serif;
+}
+.first-line-demo3::first-line {
+  color: #ff8f00;
+  font-style: italic;
+  background: #fff3e0;
+}
+
+/* =========================================================================
+   ::first-letter Demo (Section-specific, no style override)
+   ========================================================================= */
+.first-letter-demo1::first-letter {
+  font-size: 2.3em;
+  color: #e53935;
+  float: left;
+  font-family: "Times New Roman", serif;
+  margin-right: 6px;
+  line-height: 1;
+}
+.first-letter-demo2 p::first-letter {
+  font-size: 2em;
+  color: #43a047;
+  font-weight: bold;
+  border-bottom: 2px solid #43a047;
+}
+.first-letter-demo3::first-letter {
+  color: #7e57c2;
+  font-size: 2em;
+  font-style: italic;
+  background: #ede7f6;
+  padding: 0 4px;
+}
+
+/* =========================================================================
+   ::selection Demo (Section-specific, no style override)
+   ========================================================================= */
+   /* This file demonstrates the use of the ::selection pseudo-element
+      for styling the text selection in paragraphs. */
+.selection-demo1::selection {
+  background: #ffeb3b;
+  color: #1b5e20;
+}
+.selection-demo2 p::selection {
+  background: #81d4fa;
+  color: #1508c9;
+}
+.selection-demo3::selection {
+  background: #f3e5f5;
+  color: #6a1b9a;
+}
+
+
+/* =========================================================================
+   ::first-line Demo (Section-specific, no style override)
+   ========================================================================= */
+/* This file demonstrates the use of the ::first-line and ::first-letter pseudo-elements
+   for styling the first line and first letter of paragraphs, respectively. */
+
+   .first-line-demo1::first-line {
+  font-weight: bold;
+  color: #1976d2;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+}
+.first-line-demo2 p::first-line {
+  color: #388e3c;
+  background: #e8f5e9;
+  font-family: "Georgia", serif;
+}
+.first-line-demo3::first-line {
+  color: #ff8f00;
+  font-style: italic;
+  background: #fff3e0;
+}
+
+/* =========================================================================
+   ::first-letter Demo (Section-specific, no style override)
+   ========================================================================= */
+.first-letter-demo1::first-letter {
+  font-size: 2.3em;
+  color: #e53935;
+  float: left;
+  font-family: "Times New Roman", serif;
+  margin-right: 6px;
+  line-height: 1;
+}
+.first-letter-demo2 p::first-letter {
+  font-size: 2em;
+  color: #43a047;
+  font-weight: bold;
+  border-bottom: 2px solid #43a047;
+}
+.first-letter-demo3::first-letter {
+  color: #7e57c2;
+  font-size: 2em;
+  font-style: italic;
+  background: #ede7f6;
+  padding: 0 4px;
+}
+
+/* =========================================================================
+   ::selection Demo (Section-specific, no style override)
+   ========================================================================= */
+   /* This file demonstrates the use of the ::selection pseudo-element
+      for styling the text selection in paragraphs. */
+.selection-demo1::selection {
+  background: #ffeb3b;
+  color: #1b5e20;
+}
+.selection-demo2 p::selection {
+  background: #81d4fa;
+  color: #1508c9;
+}
+.selection-demo3::selection {
+  background: #f3e5f5;
+  color: #6a1b9a;
+}
